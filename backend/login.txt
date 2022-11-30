@@ -1,0 +1,18 @@
+{  "userTypeId":1
+   "email":"admin@admin.com",
+    "password":"12345"
+}
+
+"userTypeId":1
+ "email":"vall@admin.com",
+    "password":"12345"
+
+"userTypeId":2
+"email":"hopper@admin.com",
+    "password":"12345"
+
+"userTypeId":2
+  "email":"namra@admin.com",
+    "password":"12345"
+
+/var/lib/postgresql/data
