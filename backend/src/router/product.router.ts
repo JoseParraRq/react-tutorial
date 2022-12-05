@@ -10,12 +10,11 @@ const router = Router();
 // router.put("/updateProduct",middlewareJwt,ProductController.updateProduct);
 // router.delete("/deleteProduct",middlewareJwt,middlewareUserType,ProductController.deleteProductLogic);
 
-
-
 router.post("/createProduct",ProductController.createProduct);
 router.post("/getProductById",ProductController.getProductById);
-router.get("/getAllProducts",ProductController.getAllProducts);
-router.put("/updateProduct",ProductController.updateProduct);
-router.delete("/deleteProduct",ProductController.deleteProductLogic);
+router.get("/getAllProducts" ,ProductController.getAllProducts);
+router.put("/updateProduct" ,ProductController.updateProduct);
+router.delete("/deleteProduct" ,ProductController.deleteProductLogic);
 
-export default router;
+
+export default router

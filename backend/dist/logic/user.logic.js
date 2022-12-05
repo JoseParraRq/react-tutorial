@@ -46,7 +46,7 @@ class UserLogic extends user_entities_1.User {
             try {
                 let user = yield entities_factory_1.EntitiesFactory.getUserModel(params.firstName, params.surName, params.email, params.password, params.userTypeId);
                 const bcrypts = yield bc.hashSync(params.password, 8);
-                user.password = bcrypts;
+                user.password = yield bcrypts;
                 yield user_entities_1.User.save(user);
                 return user;
             }
