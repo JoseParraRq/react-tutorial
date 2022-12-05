@@ -19,7 +19,7 @@ export class UserLogic extends User {
                 params.userTypeId
             );
             const bcrypts = await bc.hashSync(params.password, 8)
-            user.password = bcrypts;
+            user.password = await bcrypts;
             await User.save(user);
             return user;
         } catch (error) {

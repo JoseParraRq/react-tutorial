@@ -5,10 +5,11 @@ const router = Router();
 
 
 router.post("/login",UserController.login);
-//router.get("/user",middlewareJwt,UserController.getUserById); //cuando se quiera agregar jwt
+// router.get("/user",middlewareJwt,UserController.getUserById); //cuando se quiera agregar jwt
 router.get("/user",UserController.getUserById);
 
-//router.post("/createUser", middlewareJwt,middlewareUserType,UserController.createUser);
+// router.post("/createUser", middlewareJwt,middlewareUserType,UserController.createUser);
+
 router.post("/createUser",UserController.createUser);
 
 router.post("/getUserById",UserController.getUserById);
