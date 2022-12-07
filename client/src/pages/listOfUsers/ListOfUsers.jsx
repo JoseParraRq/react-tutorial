@@ -3,7 +3,7 @@ import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
 import { Button } from 'primereact/button';
 import { Dialog } from 'primereact/dialog';
-import { getAllUsers } from '../../features/services/userService';
+import { getAllUsers } from '../../features/users/services/userService.js';
 import { Link} from 'react-router-dom';
 
 export default function ListOfUsers() {

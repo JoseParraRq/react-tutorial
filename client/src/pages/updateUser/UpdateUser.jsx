@@ -3,7 +3,7 @@ import { InputText } from 'primereact/inputtext';/*npm install primereact primei
 import { Button } from 'primereact/button';
 import { useForm, Controller } from 'react-hook-form';
 import { classNames } from 'primereact/utils';
-import { getUserById, updateUserService} from '../../features/services/userService';
+import { getUserById, updateUserService} from '../../features/users/services/userService.js';
 import { useLocation } from 'react-router-dom';
 import { useParams, useNavigate } from "react-router-dom";
 

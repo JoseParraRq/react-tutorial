@@ -9,7 +9,6 @@ export default function FormTest() {
     const sendTheDataTest = (data) => {
         data.preventDefault();
         // console.log(data);
-
         let jsonSubmit = {
 
             EntradaTexto:data.target[0].value,
@@ -17,7 +16,6 @@ export default function FormTest() {
             CheckBox:data.target[2].checked
 
         }
-
         console.log(jsonSubmit);
     }
 
@@ -33,6 +31,5 @@ export default function FormTest() {
                 </form>
             </div>
         </div>
-
     )
 }

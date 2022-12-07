@@ -5,8 +5,8 @@ import { Password } from 'primereact/password';
 import { useForm, Controller } from 'react-hook-form';
 import { classNames } from 'primereact/utils';
 import { Dropdown } from 'primereact/dropdown';
-import {getAllUserTypes} from '../../features/services/usertypeService';
-import { saveUser } from '../../features/services/userService';
+import {getAllUserTypes} from '../../features/users/services/usertypeService.js';
+import { saveUser } from '../../features/users/services/userService.js';
 import { Link, Navigate } from 'react-router-dom';
 import { useParams, useNavigate } from "react-router-dom";
 

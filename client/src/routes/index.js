@@ -1,7 +1,8 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import ListOfProducts from '../pages/listOfProducts/ListOfProducts';
+
 import ListOfUsers from '../pages/listOfUsers/ListOfUsers';
+import Products from '../pages/products/products';
 import RegisterProduct from '../pages/registerProducts/RegisterProduct';
 import RegisterUser from '../pages/registerUser/RegisterUser';
 import UpdateUser from '../pages/updateUser/UpdateUser.jsx';
@@ -19,6 +20,8 @@ function RoutesApp(props) {
       <Route path='/inputText' element={<EntradaTexto/>}/>
       <Route path='/textArea' element={<TextArea/>}/>
       <Route path='/formTest' element={<FormTest/>}/>
+      <Route path='/products' element={<Products/>}/>
+
 
     </Routes>
   )
