@@ -10,14 +10,14 @@ export function Input(props) {
 
   return (
     <div className="field">
-      <span className={style.span}>
+      <span className={style?.span}>
         {icon && <i className={icon} />}
+        <label htmlFor={name} className={classNames({ 'p-error': !!error[name] })}>{label}: </label>
         <Controller name={name} control={control}
           rules={rules}
           render={({ field, fieldState }) => (
             <InputText id={field.name} {...field} className={classNames({ 'p-invalid': fieldState.invalid })} />
-          )} />
-        <label htmlFor={name} className={classNames({ 'p-error': !!error[name] })}>{label}</label>
+            )} />
       </span>
       {error[name] && <small className="p-error">{error[name].message}</small>}
     </div>

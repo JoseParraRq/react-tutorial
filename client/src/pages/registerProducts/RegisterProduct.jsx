@@ -4,6 +4,8 @@ function RegisterProduct() {
   return (
     <div className='container-fluid'>
         <h1>Register Product</h1>
+
+        
     </div>
   )
 }
