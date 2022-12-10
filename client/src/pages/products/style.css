@@ -1,0 +1,12 @@
+.products {
+    width: 100%;
+    display: flex;
+}
+
+.shopping-car {
+width: 30%;
+}
+
+.list-product {
+    width: 70%;
+}

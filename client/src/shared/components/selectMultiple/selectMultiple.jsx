@@ -2,7 +2,7 @@ import React from 'react';
 import { MultiSelect } from 'primereact/multiselect';
 
 
-export const SelectMultiple = (props: any) => {
+export const SelectMultiple = (props) => {
     const { optionLabel, items, option, setOption , placeholder} = props
     return (
         <div className="field mt-4">

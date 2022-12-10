@@ -3,14 +3,18 @@ import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
 import { Product } from '../../features/products/components/product/Product';
 import ListProducts from '../../features/products/components/listProducts/ListProducts';
-//
+import "./style.css";
+
 
 export default function Products() {
   const [shoppingCar, setShoppingCar] = useState([]);
+  const [onShoppingCar,setOnShoppingCar] = useState('');  
 
   const addProductToShoppingCar = (product) => {
     console.log(product);
+    
     setShoppingCar([...shoppingCar, product])
+    // setOnShoppingCar('');
   }
 
   const products = [
@@ -19,16 +23,14 @@ export default function Products() {
   ]
 
   return (
-    <div>
-
-      <div>
+    <div className='products'>           
+      <div className='list-product'>
       <ListProducts products={products} addShoppingCar={addProductToShoppingCar}/>
       </div>
 
-      <div>
-
+      <div className='shopping-card'>
+      <ListProducts products={shoppingCar} onShoppingCar={'agregado'}/>
       </div>
     </div>
-
   )
 }

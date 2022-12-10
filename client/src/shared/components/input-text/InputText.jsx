@@ -10,7 +10,7 @@ export function InputPassword(props) {
 
 	return (
 		<div className="field">
-			<span className={style.span}>
+			<span className={style?.span}>
 				{icon && <i className={icon} />}
 				<label htmlFor={name} className={classNames({ 'p-error': !!error[name] })}>{label}: </label>
 				<Controller name={name} control={control}
