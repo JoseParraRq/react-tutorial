@@ -1,9 +1,13 @@
+import { Button } from 'primereact/button';
 import React from 'react'
+import { useForm } from 'react-hook-form';
+import { Input } from '../../../../../shared';
 
-export const createProduct = () => {
+export const CreateProduct = () => {
 
     const defaultValues = {
         name: '',
+        brand : '',
       
     }
 
@@ -21,8 +25,8 @@ export const createProduct = () => {
                 <div className="card">
                     <h5 className="text-center"> Agregar Producto</h5>
                     <form onSubmit={handleSubmit(onSubmit)} className="p-fluid">
-                        <Input name='name' label='Nombre' control={control} error={errors} style={{ span: "p-float-label" }} rules={{ required: 'Name is required.' }} />
-                      
+                        <Input name='name' label='Nombre' control={control} error={errors} style={{ span:"p-float-label" }} rules={{ required: 'Name is required.' }} />
+                        <Input name='brand' label='Marca' control={control} error={errors} style={{ span: "p-float-label" }} rules={{ required: ' brand is required.' }} />
                         <Button type="submit" label="Submit" className="mt-4" />
                     </form>
                 </div>

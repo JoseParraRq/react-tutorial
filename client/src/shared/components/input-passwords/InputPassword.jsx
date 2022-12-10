@@ -7,6 +7,8 @@ import { Password } from 'primereact/password';
 export function InputPassword(props) {
 	const { error, name, label, style, icon , control, rules } = props
 
+	console.log( error, name, label, style, icon , control, rules)
+
 
 	return (
 		<div className="field">

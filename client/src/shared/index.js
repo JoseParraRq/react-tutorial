@@ -1,1 +1,2 @@
-export * from './components/select/select'
+export * from './components/input/Input';
+export * from './components/input-passwords/InputPassword';
